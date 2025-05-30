@@ -46,17 +46,16 @@ export default function Music() {
   }, []);
 
   return (
-    <div className="fixed bottom-0 right-0  p-4 flex items-center space-x-4">
+    <div className="fixed bottom-0 right-0  p-4 flex flex-col-reverse sm:flex-row items-center space-x-4">
       <div
         style={{ transform: `rotate(${isRotating}deg)` }}
-        className="transition-transform"
+        className="transition-transform w-12 h-12  sm:w-20 sm:h-20"
       >
         <Image
           src="/musicPlayer/music-cover.png"
           alt="Album Cover"
-          width={80}
-          height={80}
-          className="rounded"
+          fill
+          className="rounded object-cover"
         />
       </div>
       <div className="flex items-center space-x-2">
