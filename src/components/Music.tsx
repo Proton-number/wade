@@ -4,7 +4,6 @@ import { Play, Pause } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
-import { request } from "http";
 
 export default function Music() {
   const [isPlaying, setIsPlaying] = useState(false);

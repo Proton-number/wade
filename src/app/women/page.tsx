@@ -1,7 +1,7 @@
 import React from "react";
 
 function Women() {
-  return <div>Women's Wear</div>;
+  return <div>Women Wear</div>;
 }
 
 export default Women;
