@@ -12,13 +12,13 @@ export default function Home() {
   useEffect(() => {
     updateFormattedDate(); // Update immediately
     const timer = setInterval(updateFormattedDate, 1000);
-    return () => clearInterval(timer);
+    return () => clearInterval(timer); 
   }, [updateFormattedDate]);
 
   const links = [
-    { href: "/summercollection", label: "Summer Collection" },
-    { href: "/women", label: "Women" },
-    { href: "/men", label: "Men" },
+    { href: "/collections/summer-collection", label: "Summer Collection" },
+    { href: "/collections/women", label: "Women" },
+    { href: "/collections/men", label: "Men" },
   ];
 
   const socialLinks = [
@@ -43,7 +43,7 @@ export default function Home() {
       </video>
 
       {/* Main Content Container */}
-      <div className="relative w-full max-w-8xl mx-auto">
+      <div className="relative w-full max-w-8xl mx-auto pb-40 sm:pb-24">
         {/* Top Marquee */}
         <div className="bg-black  p-2 rounded-md shadow-lg">
           <Marquee
